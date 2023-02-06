@@ -1,0 +1,9 @@
+.ListeProduits {
+    padding: 0 2rem;
+    
+    .produits {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
