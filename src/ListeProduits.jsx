@@ -13,7 +13,7 @@ export default function ListeProduits() {
         {
           produits.map(
             function(prd) {
-            return <Produit nom={prd.nom} prix={prd.prix} id={produits.id}/>
+            return <Produit nom={prd.nom} prix={prd.prix} id={prd.id}/>
           }
           )
         }
