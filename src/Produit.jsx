@@ -4,9 +4,9 @@ export default function Produit({panier, setPanier, nom, prix, id}) {
 
     function ajouterPanier() {
       //il faut obtenier une copie conforme du panier (clone)
-      let clonePanier = JSON.parse(JSON.stringify(panier));
+      //let clonePanier = JSON.parse(JSON.stringify(panier));
       //let clonePanier = {... props.panier}
-      //let clonePanier = Object.assign({}, props.panier);
+      let clonePanier = Object.assign({}, panier);
       //ajouter au panier
      if(clonePanier[id]){
       clonePanier[id].qte++
