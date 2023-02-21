@@ -39,5 +39,7 @@ function calculerSommaire (objPanier) {
 
     info.artTotal = tabPanier.reduce((acc, suiv) => acc + suiv.qte, 0);
     info.sousTotal = tabPanier.reduce((acc, suiv) => acc + (suiv.qte * suiv.prix),0);
+    info.taxes = info.sousTotal * 14.975 / 100;
+    info.total = info.sousTotal + info.taxes;
     return info;
 }
