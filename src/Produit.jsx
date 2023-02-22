@@ -17,6 +17,9 @@ export default function Produit({panier, setPanier, nom, prix, id}) {
      }
       //donner à setPanier la nouvelle valeur du panier :
       setPanier(clonePanier);
+
+      //Le panier a été modifié donc on va sauvegarder son état dans un objet JS surveillé par REACT
+      //window.localStorage.setItem('panier-ls', JSON.stringify(clonePanier));
       }
 
     return (
